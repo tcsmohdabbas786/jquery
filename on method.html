@@ -1,0 +1,1095 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEARN JQUERY</title>
+    <style>
+        body{font-family: arial;}
+        #box{
+            padding: 10px;
+            border: 1px solid #000;
+        }
+        .boxbg{
+            background: pink;
+        }
+    </style>
+</head>
+<body>
+<center>
+    <h1>JQUERY ON() METHODS</h1>  
+</center>
+    <div id="box">
+        <center>
+        <h2> text box</h2>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio, quidem quas. Dignissimos, iusto deleniti. Officia modi quasi atque doloribus debitis?
+        </p>
+        </center>
+    </div>
+
+    <script src="jquery.js.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#box").on("mouseover mouseout",function(){
+                $(this).toggleClass("boxbg");
+            });
+        });
+
+        // $(document).ready(function(){
+        //     $(".box").on({
+        //     "click" : function(){
+        //     $("this").css("background","pink");
+        //     },
+        //     "mouseover" : function(){
+        //     $("this").css("background","orange");
+        //     },
+        //     "mouseout" : function(){
+        //     $("this").css("background","green");
+        //     }
+        //     });
+        // });
+
+
+   </script>
+</body>
+</html> -->
+
+<!-- append & prepend METHODS -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEARN JQUERY</title>
+    <style>
+        body{font-family: arial;}
+        #box{
+            padding: 10px;
+            border: 1px solid #000;
+            background: red;
+        }
+        </style> 
+</head>
+<body>
+<center>
+    <h1>Jquery Append & Prepend Methods </h1>  
+</center>
+    <div id="box">
+        <center> 
+         <h2> text box</h2>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio, quidem quas. Dignissimos, iusto deleniti. Officia modi quasi atque doloribus debitis?
+        </p>
+        </center>
+    </div> 
+    <ol>
+        <li>list item 1</li>
+        <li>list item 2</li>
+        <li>list item 3</li>
+        <li>list item 4</li>
+        <li>list item 5</li>
+    </ol>
+    <center> 
+    <br>
+    <button id="appendBtn">Append</button>
+    <button id="prependBtn">Prepend</button>
+    </center>
+
+    <script src="jquery.js.js"></script>
+    <script>
+        $(document).ready(function(){
+           $("#appendBtn").click(function(){
+            $("#box").append("<h2> abbas </h2>");
+           });
+           $("#prependBtn").click(function(){
+            $("#box").prepend("<h2> mohd  </h2>");
+           });
+
+           $("#appendBtn").click(function(){
+            $("ol").append("<li>list item 3</li>");
+           });
+        });
+
+      
+
+
+   </script>
+</body>
+</html> -->
+
+<!--after & before methods-->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEARN JQUERY</title>
+    <style>
+        body{font-family: arial;}
+        #box{
+            padding: 10px;
+            border: 1px solid #000;
+            background: red;
+        }
+        </style> 
+</head>
+<body>
+<center>
+    <h1>Jquery Append & Prepend Methods </h1>  
+</center>
+    <div id="box">
+        <center> 
+         <h2> text box</h2>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio, quidem quas. Dignissimos, iusto deleniti. Officia modi quasi atque doloribus debitis?
+        </p>
+        </center>
+    </div> 
+    
+    <center> 
+    <br>
+    <button id="afterBtn">After</button>
+    <button id="beforBtn">Before</button>
+    </center>
+
+    <script src="jquery.js.js"></script>
+    <script>
+        $(document).ready(function(){
+           $("#afterBtn").click(function(){
+            $("#box").append("<h2> abbas </h2>");
+           });
+           $("#beforBtn").click(function(){
+            $("#box").prepend("<h2> mohd  </h2>");
+           });
+
+        });
+
+      
+
+
+   </script>
+</body>
+</html> -->
+
+<!-- empthy & remove methods -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEARN JQUERY</title>
+    <style>
+        body{font-family: arial;}
+        #box{
+            padding: 10px;
+            border: 1px solid #000;
+            background: orange;
+        }
+        </style> 
+</head>
+<body>
+<center>
+    <h1>Jquery Append & Prepend Methods </h1>  
+</center>
+    <div id="box">
+        <center> 
+         <h2> text box</h2>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio, quidem quas. Dignissimos, iusto deleniti. Officia modi quasi atque doloribus debitis?
+        </p>
+        </center>
+    </div> 
+    
+    <center> 
+    <br>
+    <button id="emptyBtn">Empty</button>
+    <button id="removeBtn">Remove</button>
+    </center>
+
+    <script src="jquery.js.js"></script>
+    <script>
+        $(document).ready(function(){
+           $("#emptyBtn").click(function(){
+            $("#box p").empty();
+           });
+           $("#removeBtn").click(function(){
+            $("#box").remove();
+           });
+
+        });
+
+      
+
+
+   </script>
+</body>
+</html> -->
+
+<!-- appendTo & prepentTo -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEARN JQUERY</title>
+    <style>
+        body{font-family: arial;}
+        #box{
+            padding: 10px;
+            border: 1px solid #000;
+            background: orange;
+        }
+        </style> 
+</head>
+<body>
+<center>
+    <h1>Jquery Append & Prepend Methods </h1>  
+</center>
+    <div id="box">
+        <center> 
+         <h2> text box</h2>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio, quidem quas. Dignissimos, iusto deleniti. Officia modi quasi atque doloribus debitis?
+        </p>
+        </center>
+    </div> 
+    
+    <center> 
+    <br>
+    <button id="appendBtn">AppendTo</button>
+    <button id="prependBtn">PrependTo</button>
+    </center>
+
+    <script src="jquery.js.js"></script>
+    <script>
+        $(document).ready(function(){
+           $("#appendBtn").click(function(){
+            $("<h2>appendTo:abbas</h2>").appendTo("#box");
+           });
+           $("#prependBtn").click(function(){
+            $("<h2>prependTo:mohd</h2>").prependTo("#box");
+           });
+
+        });
+
+      
+
+
+   </script>
+</body>
+</html> -->
+
+<!-- jquery clone method -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEARN JQUERY</title>
+    <style>
+        body{font-family: arial;}
+        #box{
+            padding: 10px;
+            border: 1px solid #000;
+            background: orange;
+            margin: 10px;
+        }
+        #box2{
+            padding: 10px;
+            border: 1px solid #000;
+            background: yellow;
+            margin: 10px;
+        }
+        </style> 
+</head>
+<body>
+<center>
+    <h1>Jquery Clone() Methods </h1>  
+</center>
+
+        <center> 
+    <div id="box">
+         <h2> text box</h2>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio, quidem quas. Dignissimos, iusto deleniti. Officia modi quasi atque doloribus debitis?
+        </p>
+    </div>
+        </center>
+     
+    <center> 
+    <div id="box2">
+         <!-<h2> text box</h2> -->
+        <!-- <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+        </p>
+    </div> 
+    </center>
+    
+    <center> 
+    <br>
+    <button id="cloneBtn">Clone</button>
+    
+    </center>
+
+    <script src="jquery.js.js"></script>
+    <script>
+        $(document).ready(function(){
+           $("#cloneBtn").click(function(){
+           $("#box h2,p,h1").clone().appendTo("#box2");
+           $("#box h2,p,h1").clone().prependTo("#box2");
+           $("#box2 h2,p,h1").clone().appendTo("#box");
+           $("#box2 h2,p,h1").clone().prependTo("#box");
+           });
+        });
+
+      
+
+
+   </script>
+</body>
+</html>  -->
+
+
+<!-- replacewith methods -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEARN JQUERY</title>
+    <style>
+        body{font-family: arial;}
+        #box{
+            padding: 10px;
+            border: 1px solid #000;
+            background: yellowgreen;
+            margin: 10px;
+        }
+        </style> 
+</head>
+<body>
+<center>
+    <h1>Jquery Replacewith() & ReplacewAll() Methods </h1>  
+</center>
+
+        <center> 
+    <div id="box">
+         <h2> text box</h2>
+        <p>
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quae repellat laborum nobis in, porro assumenda nisi earum architecto, tempore beatae reprehenderit! Beatae magni laudantium voluptatem culpa, eaque nihil eligendi!
+        </p>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias earum ab praesentium optio saepe et eum beatae provident consequatur non sit vero cupiditate iusto voluptates voluptatum, totam ut ex aspernatur!
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod velit quae rerum laudantium corrupti dolorem ducimus, dolor facilis necessitatibus sint vel? Aut reprehenderit quae ipsum fugiat nihil obcaecati eaque soluta.
+        </p>
+    </div>
+        </center>
+      
+    <center> 
+    <br>
+    <button id="replaceBtn">Replace</button>
+    </center>
+
+    <script src="jquery.js.js"></script>
+    <script>
+        $(document).ready(function(){
+           $("#replaceBtn").click(function(){
+           $("#box p:first").replaceWith("<h2>mohd abbas</h2>")
+           $("#box p:nth-child(3)").replaceWith("mohd abbas")
+        //    $("<h2>mohd abbas</h2>").replaceAll("#box p")
+          }); 
+        });
+
+    </script>
+</body>
+</html> -->
+
+<!-- wrap() & unwrap -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEARN JQUERY</title>
+    <style>
+        body{font-family: arial;}
+        #box{
+            padding: 10px;
+            border: 1px solid #000;
+            background: yellowgreen;
+            margin: 10px;
+        }
+        #test{
+            background: pink;
+            padding:5px;
+        }
+        .red{color:red;}
+        </style> 
+</head>
+<body>
+<center>
+    <h1>Jquery wrap() & unwrap() Methods </h1>  
+</center>
+
+        <center> 
+    <div id="box">
+        <h2> text box</h2>
+        <p>
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quae repellat laborum nobis in, porro assumenda nisi earum architecto, tempore 
+        </p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam recusandae consequatur pariatur blanditiis sit voluptates, numquam alias reiciendis architecto itaque.</p>
+    </div>
+        </center>
+      
+    <center> 
+    <br>
+    <button id="wrapBtn">wrap</button>
+    <button id="unwrapBtn">unwrap</button>
+    <button id="wrapAllBtn">wrapAll</button>
+    <button id="wrapInnerBtn">wrapInner</button>
+    </center>
+
+    <script src="jquery.js.js"></script>
+    <script>
+        $(document).ready(function(){
+           $("#wrapBtn").click(function(){
+           $("#box p").wrap("<div id='test'></div>");
+        //  $("#box p").wrap("<h2></h2>");
+           }); 
+
+           $("#unwrapBtn").click(function(){
+           $("#box p").unwrap();
+           }); 
+        });
+
+        $(document).ready(function(){
+           $("#wrapAllBtn").click(function(){
+           $("#box p").wrapAll("<div id='test'></div>");
+        //  $("#box p").wrap("<h2></h2>");
+           }); 
+
+           $("#wrapInnerBtn").click(function(){
+           $("h1").wrapInner("<span class='red'></span");
+           }); 
+        });
+
+    </script>
+</body>
+</html> -->
+
+<!-- jquery width methods -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEARN JQUERY</title>
+    <style>
+        body{font-family: arial;}
+        #box{
+            padding: 10px;
+            border: 10px solid #000;
+            background: yellowgreen;
+            margin: 10px;
+           
+        }
+        </style> 
+</head>
+<body>
+<center>
+    <h1>Jquery width & height Methods </h1>  
+</center>
+
+    <center> 
+    <div id="box">
+        <h2> text box</h2>
+        <p>
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quae repellat laborum nobis in, porro assumenda nisi earum architecto, tempore Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab consequatur quasi aliquid cum optio ipsam pariatur necessitatibus accusamus autem fugit, ipsum assumenda esse sapiente consequuntur facilis officiis molestias praesentium aut.
+        </p>
+    </div>
+    </center>
+      
+    <center> 
+    <br>
+    <button id="widthBtn">width</button>
+    <button id="heightBtn">height</button>
+    <button id="positionBtn">positionBtn</button>
+    <button id="offsetBtn">offsetBtn</button>
+    
+    </center>
+
+    <script src="jquery.js.js"></script>
+    <script>
+        $(document).ready(function(){
+           $("#widthBtn").click(function(){
+           $("#box").width("4000px");
+           console.clear();
+           console.log("Width : " + $("#box").Width());
+           console.log("InnerWidth : " + $("#box").InnerWidth());
+           console.log("OuterWidth : " + $("#box").OuterWidth());
+           console.log("OuterWidth(true) : " + $("#box").OuterWidth(true));
+          }); 
+
+          $("#heightBtn").click(function(){
+           console.clear();
+           console.log("Height : " + $("#box").Height());
+           console.log("InnerHeight : " + $("#box").InnerHeight());
+           console.log("OuterHeight : " + $("#box").OuterHeight());
+           console.log("OuterHeight(true) : " + $("#box").OuterHeight(true));
+          }); 
+
+        }); 
+        $(document).ready(function(){
+          $("#positionBtn").click(function(){
+            console.log($("#box").position());
+          });
+
+          $("#offsetBtn").click(function(){
+            console.log($("#box").offset());
+          });
+        });
+    </script>
+</body>
+</html> -->
+
+<!-- jquery has class methode -->
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEARN JQUERY</title>
+    <style>
+        body{font-family: arial;}
+        #box{
+            padding: 10px;
+            border: 10px solid #000;
+            background: yellowgreen;
+            margin: 10px;
+           
+        }
+        </style> 
+</head>
+<body>
+<center>
+    <h1>Jquery has class Methods </h1>  
+</center>
+
+    <center> 
+    <div id="box">
+        <h2 class="test"> text box</h2>
+        <p>
+           Lorem ipsum dolor sit <span>  consectetur adipisicing elit. Quibusdam quae repellat laborum nobis in, porro assumenda nisi earum architecto, tempore Lorem ipsum dolor sit amet</span> consectetur adipisicing elit.
+        </p>
+    </div>
+    </center>
+      
+    <center> 
+    <br>
+    <button id="hasclassBtn">Has Class</button>
+    </center>
+
+    <script src="jquery.js.js"></script>
+    <script>
+        $(document).ready(function(){
+        $("#hasclassBtn").click(function(){
+        // console.log($("#box").hasClass("test"));
+        var x=$("#box h2").hasClass("test");
+        if(x==true)
+        {
+            console.log("yes");
+        }
+        else{
+            console.log("no");
+        }
+        });
+        }); 
+    </script>
+</body> -->
+<!-- </html> -->
+
+<!-- hide & show methods -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEARN JQUERY</title>
+    <style>
+        body{font-family: arial;}
+        #box{
+            padding: 10px;
+            border: 10px solid #000;
+            background: yellowgreen;
+            margin: 10px;
+           
+        }
+        </style> 
+</head>
+<body>
+<center>
+    <h1>Jquery hide & show Methods </h1>  
+</center>
+
+    <center> 
+    <div id="box">
+        <h2> text box</h2>
+        <p>
+           Lorem ipsum dolor sit <span>  consectetur adipisicing elit. Quibusdam quae repellat laborum nobis in, porro assumenda nisi earum architecto, tempore Lorem ipsum dolor sit amet</span> consectetur adipisicing elit.
+        </p>
+    </div>
+    </center>
+      
+    <center> 
+    <br>
+    <button id="hideBtn">Hide</button>
+    <button id="showBtn">Show</button>
+    <button id="toggleBtn">toggle</button>
+    </center>
+
+    <script src="jquery.js.js"></script>
+    <script>
+        $(document).ready(function(){
+        $("#hideBtn").click(function(){
+        $("#box").hide("slow",function(){
+            console.log("now it is hidden");
+        });
+        });
+
+        $("#showBtn").click(function(){
+        $("#box").show("slow",function(){
+            console.log("now it is show");
+        });
+        });
+        $("#toggleBtn").click(function(){
+        $("#box").toggle("slow",function(){
+            console.log("now it is show");
+        });
+        });
+        }); 
+    </script>
+</body>
+</html> -->
+
+<!-- fade methods -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEARN JQUERY</title>
+    <style>
+        body{font-family: arial;}
+        #box{
+            padding: 10px;
+            border: 10px solid #000;
+            background: yellowgreen;
+            margin: 10px;
+           
+        }
+        </style> 
+</head>
+<body>
+<center>
+    <h1>Jquery fade Methods </h1>  
+</center>
+
+    <center> 
+    <div id="box">
+        <h2> text box</h2>
+        <p>
+           Lorem ipsum dolor sit <span>  consectetur adipisicing elit. Quibusdam quae repellat laborum nobis in, porro assumenda nisi earum architecto, tempore Lorem ipsum dolor sit amet</span> consectetur adipisicing elit.
+        </p>
+    </div>
+    </center>
+      
+    <center> 
+    <br>
+    <button id="fadeOutBtn">fade out</button>
+    <button id="fadeInBtn">fade in</button>
+    <button id="fadeToggleBtn">fade toggle</button>
+    </center>
+
+    <script src="jquery.js.js"></script>
+    <script>
+        $(document).ready(function(){
+        $("#fadeOutBtn").click(function(){
+        $("#box").fadeOut("slow");
+        });
+
+        $("#fadeInBtn").click(function(){
+        $("#box").fadeIn("slow");
+        });
+
+        $("#fadeToggleBtn").click(function(){
+        $("#box").fadeToggle("slow");
+        });
+        }); 
+    </script>
+</body>
+</html> -->
+
+<!-- slide Down & slide up methods -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEARN JQUERY</title>
+    <style>
+        body{font-family: arial;}
+        #box{
+            padding: 10px;
+            border: 10px solid #000;
+            background: yellowgreen;
+            margin: 10px;
+           
+        }
+        </style> 
+</head>
+<body>
+<center>
+    <h1>Jquery Slide Down & slide Up Methods </h1>  
+</center>
+
+    <center> 
+    <div id="box">
+        <h2> text box</h2>
+        <p>
+           Lorem ipsum dolor sit <span>  consectetur adipisicing elit. Quibusdam quae repellat laborum nobis in, porro assumenda nisi earum architecto, tempore Lorem ipsum dolor sit amet</span> consectetur adipisicing elit.
+        </p>
+    </div>
+    </center>
+      
+    <center> 
+    <br>
+    <button id="slideUptBtn">slideUp</button>
+    <button id="slideDownBtn">slideDown</button>
+    <button id="slideToggleBtn">slideToggle</button>
+    </center>
+
+    <script src="jquery.js.js"></script>
+    <script>
+        $(document).ready(function(){
+        $("#slideUpBtn").click(function(){
+        $("#box").slideUp();
+        });
+
+        $("#slideDownBtn").click(function(){
+        $("#box").slideDown();
+        });
+
+        $("#slideToggleBtn").click(function(){
+        $("#box").slideToggle();
+        });
+        }); 
+    </script>
+</body>
+</html>
+ -->
+
+
+ <!-- animation methods -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEARN JQUERY</title>
+    <style>
+        body{font-family: arial;}
+        #box{
+            padding: 100;
+            border: 10px solid #000;
+            background: yellowgreen;
+            height: 50%;
+           }
+        </style> 
+</head>
+<body>
+<center>
+    <h1>Jquery Animation Methods </h1>  
+</center>
+
+    <center> 
+    <div id="box">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit enim </p>
+    </div>
+
+    </center>
+      
+    <center> 
+    <br>
+    <button id="animationBtn">Animation</button>
+    <button id="stopBtn">Stop</button> -->
+    <!-- </center>
+
+    <script src="jquery.js.js"></script>
+    <script>
+        $(document).ready(function(){
+         $("#animationBtn").click(function(){
+            $("#box").css("background","pink").slideUp().slideDown();
+        // $("#box").animate({left:"200px"},3000);
+        // $("#box").animate({fontSize:"25px"},2000);
+        // $("#box").animate({
+        //     left:"100%",
+        //     width:"+200px",
+        //     fontSize:"25px",
+        //     borderWidth:"5px",
+        // })
+         });
+        // $("#stopBtn").click(function(){
+        //     $("#box").stop(true,true);
+        // });
+        }); 
+    </script>
+</body>
+</html> -->
+
+
+<!-- jquery ancestor method -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEARN JQUERY</title>
+    <style>
+        body{font-family: arial;}
+        #main-outer{
+            border: 10px solid #000;
+            background: yellowgreen;
+            margin: 10px;
+            }
+
+        #outer{
+            border: 10px solid #000;
+            background: yellowgreen; 
+            margin: 10px;
+
+            }
+        #child-head{
+            border: 10px solid #000;
+            background: yellowgreen; 
+            margin: 10px;
+
+            }
+        </style> 
+</head>
+<body>
+    <h1>Jquery Ancestor Methods </h1>  
+    <div id="main-outer">
+        <h2>Main Outer</h2>
+    </div>
+    <div id="outer">
+        <h2>outer</h2>
+    </div>
+    <div id="inner">
+    <h2 id="child-head">inner</h2>
+    <div>a</div>
+    <div>b</div>
+    <div id="child-c">c</div>
+    <div>d</div>
+    </div>
+    </div>
+    </div>
+    <script src="jquery.js.js"></script>
+    <script>
+        $(document).ready(function(){
+        // $("#child-c").parents().css("background","red");
+        $("#child-c").parentsUntil("#main-outer").css("background","red");
+        });
+        </script>
+</body>
+</html> -->
+
+<!-- filtering methods -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEARN JQUERY</title>
+    <style>
+        body{font-family: arial;}
+        #first{
+             border: 3px solid #000; 
+            background: yellow;
+            margin: 10px;
+            }
+
+            #second{
+             border: 3px solid #000; 
+            background: yellow;
+            margin: 10px;
+            }
+        </style> 
+</head>
+<body>
+    <h1>Jquery filtering Methods </h1>  
+    <div id="first">
+       <p>Similique dolores ratione temporibus nam maxime possimus repellat veritatis officiis labore non.</p>
+       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et, omnis!</p>
+    </div>
+    <ul>
+        <li>Orange</li>
+        <li>Apple</li>
+        <li>Grapes</li>
+        <li>Banana</li>
+    </ul>
+    <div id="second">
+        <p class="test">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas, ad!</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur, commodi.</p>
+    </div>
+    <script src="jquery.js.js"></script>
+    <script>
+        $(document).ready(function(){
+        // $("p").first().css("background","gold");
+        // $("#first p").last().css("background","gold");
+
+        // $("p").eq(2).css("background","gold");
+
+        // $("ul li").eq(3).css("background","gold");
+
+        // $("p").last().css("background","gold");
+        // $("#second p").first().css("background","gold");
+
+        // $("#second p").not(".test").css("background","gold");
+        $("ul li").slice(1,4).css("background","gold");
+
+        });
+        </script>
+</body>
+</html>
+ -->
+
+
+ <!-- jquery has() methods -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEARN JQUERY</title>
+    <style>
+        body{font-family: arial;}
+        #first{
+            border: 3px solid #000; 
+            background: yellow;
+            margin: 10px;
+            }
+        </style> 
+</head>
+<body>
+    <h1>Jquery filtering Methods </h1>  
+    <div id="first">
+       <p>Similique dolores <span class="test">ratione temporibus nam maxime possimus repellat veritatis</span> officiis labore non.</p>
+       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et, omnis!</p>
+    </div>
+    <ul>
+        <li>Orange</li>
+        <li>Apple</li>
+        <li>Grapes</li>
+        <li>Banana</li>
+    </ul>
+   
+        <p class="test">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas, ad!</p>
+        <p>Lorem ipsum dolor sit amet consectetur,<span class="test">       adipisicing elit</span>. Consectetur, commodi.</p>
+    
+    <script src="jquery.js.js"></script>
+    <script>
+        $(document).ready(function(){
+        //  $("p").has("b,span").css("background","gold");
+        // //  $("p").has(".test").css("background","gold");
+        if($("p").parent().is("div"))
+        {
+            console.log($("p").parent().is("div"));
+         }
+        // $("p").click(function(){
+        // if($("p").parent().is("div"))
+        // {
+        //     console.log($("p").parent().is("div"));
+        // }
+        //});
+    });
+        </script>
+</body>
+</html> -->
+
+<!-- jquery each() method -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEARN JQUERY</title>
+    <style>
+        body{font-family: arial;}
+        #first{
+            border: 3px solid #000; 
+            background: yellow;
+            margin: 10px;
+            }
+        </style> 
+</head>
+<body>
+    <h1>Jquery each() Methods </h1>  
+    <ul>
+        <li>Orange</li>
+        <li>Apple</li>
+        <li>Grapes</li>
+        <li>Banana</li>
+    </ul>
+    <script src="jquery.js.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("li").each(function(){
+            console.log($(this).text());
+            $(this).text("hello");
+            });
+        });
+        </script>
+</body>
+</html> -->
+
